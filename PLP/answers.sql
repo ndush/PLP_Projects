@@ -24,3 +24,20 @@ INSERT INTO student (id, fullName, age) VALUES
 UPDATE student
 SET age = 20
 WHERE id = 2;
+
+
+-- Question 1 🗑️
+-- Drop the index named 'IdxPhone' from the 'customers' table
+DROP INDEX IdxPhone ON customers;
+
+-- Question 2 👤
+-- Create a user named 'bob' with a secure password, limited to localhost access
+CREATE USER 'bob'@'localhost' IDENTIFIED BY 'S$cu3r3!';
+
+-- Question 3 🔑
+-- Grant INSERT privilege to user 'bob' on the 'salesDB' database
+GRANT INSERT ON salesDB.* TO 'bob'@'localhost';
+
+-- Question 4 🔐
+-- Change the password for user 'bob' to a new secure value
+ALTER USER 'bob'@'localhost' IDENTIFIED BY 'P$55!23';

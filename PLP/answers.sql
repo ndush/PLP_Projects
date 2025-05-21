@@ -78,3 +78,28 @@ FROM
 RIGHT JOIN
     orders o ON c.customerNumber = o.customerNumber
 LIMIT 10;
+
+
+-- Question 1 🧑‍💼
+-- Get firstName, lastName, email, and officeCode of all employees
+-- Join employees with offices on officeCode using INNER JOIN
+SELECT e.firstName, e.lastName, e.email, e.officeCode
+FROM employees e
+INNER JOIN offices o ON e.officeCode = o.officeCode;
+
+
+-- Question 2 🛍️
+-- Get productName, productVendor, productLine from products
+-- Left join products with productlines on productLine to include all products even if no matching productLine
+SELECT p.productName, p.productVendor, p.productLine
+FROM products p
+LEFT JOIN productlines pl ON p.productLine = pl.productLine;
+
+
+-- Question 3 📦
+-- Retrieve orderDate, shippedDate, status, and customerNumber for first 10 orders
+-- Right join customers with orders on customerNumber to include all orders even if no matching customer
+SELECT o.orderDate, o.shippedDate, o.status, o.customerNumber
+FROM customers c
+RIGHT JOIN orders o ON c.customerNumber = o.customerNumber
+LIMIT 10;

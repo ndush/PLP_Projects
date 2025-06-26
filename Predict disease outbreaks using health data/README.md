@@ -31,3 +31,5 @@ Fairness: Our approach treats all crop types and soil types equally via encoding
 
 Impact:
 Farmers and agricultural planners can use this model to forecast yields under varying soil and weather conditions, helping reduce food insecurity and improve planning.
+
+https://colab.research.google.com/drive/1oSsrzrIgAx-TCIvYfYZqBFxHQX-VEArX?usp=sharing
